@@ -1,29 +1,60 @@
-/* ===== MAIL READER SHEET ===== */
-.sheet{
-  position:fixed;
-  left:0; right:0; bottom:0;
-  height:70%;
-  background:#020617;
-  border-radius:20px 20px 0 0;
-  box-shadow:0 -20px 60px rgba(0,0,0,.6);
-  z-index:9999;
-  padding:20px;
-  overflow-y:auto;
+/* BASIC LAYOUT */
+.inbox-list {
+  margin-top: 10px;
 }
 
-.sheet.hidden{
-  display:none;
+.mail {
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background: #111;
+  border-left: 4px solid #22c55e;
+  cursor: pointer;
 }
 
-.sheet-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:12px;
+.mail h4 {
+  margin: 0 0 4px;
+  font-size: 15px;
 }
 
-.sheet-body{
-  white-space:pre-wrap;
-  line-height:1.5;
-  font-size:14px;
+.mail p {
+  margin: 0;
+  font-size: 13px;
+  opacity: .7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* MAIL READER */
+.sheet {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+}
+
+.sheet.show {
+  display: flex;
+}
+
+.sheet-head {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+}
+
+.sheet-body {
+  padding: 16px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.close-btn {
+  font-size: 22px;
+  cursor: pointer;
 }
