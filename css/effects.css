@@ -1,0 +1,15 @@
+.env-bg{
+  position:fixed;inset:0;z-index:-3;
+  background:
+    radial-gradient(900px 600px at 10% 10%, #22c55e22, transparent),
+    radial-gradient(900px 600px at 90% 30%, #7c3aed22, transparent),
+    radial-gradient(800px 800px at 50% 90%, #06b6d422, transparent);
+  animation:hue 30s linear infinite;
+}
+@keyframes hue{to{filter:hue-rotate(360deg)}}
+.env-noise{
+  position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:repeating-linear-gradient(
+    transparent,transparent 2px,rgba(255,255,255,.02) 3px
+  );
+}

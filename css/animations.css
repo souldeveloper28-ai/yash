@@ -1,0 +1,6 @@
+.btn:active{transform:scale(.95)}
+.mail{animation:in .25s ease}
+@keyframes in{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1}
+}
