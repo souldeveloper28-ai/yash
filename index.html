@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TemporaryMail Pro — Black Label</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- AdSense verified -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6264617341214629"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/advanced.css">
+  <link rel="stylesheet" href="css/blacklabel.css">
+</head>
+<body data-mode="idle">
+
+<div class="env-bg"></div>
+<div class="env-noise"></div>
+
+<header class="topbar">
+  <div class="brand">TEMPMAIL<span>PRO</span></div>
+  <div class="right">
+    <span class="status-dot"></span>
+    <span class="status-text">SYSTEM ONLINE</span>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card hero">
+    <div class="hero-head">
+      <h1>Active Address</h1>
+      <span class="badge">LIMITED</span>
+    </div>
+
+    <div class="email-box">
+      <span id="email">initializing@system</span>
+      <button class="btn primary" onclick="copyMail()">Copy</button>
+    </div>
+
+    <div class="actions">
+      <button class="btn ghost" onclick="newMail()">Regenerate</button>
+      <button class="btn ghost" onclick="refreshInbox()">Sync</button>
+      <button class="btn danger" onclick="clearInbox()">Clear</button>
+    </div>
+  </section>
+
+  <div class="ad-shell">Advertisement</div>
+
+  <section class="card inbox">
+    <div class="inbox-head">
+      <h2>Inbox</h2>
+      <span id="count" class="muted">0 messages</span>
+    </div>
+    <div id="inboxList" class="inbox-list"></div>
+  </section>
+
+  <footer class="footer">
+    Built by <b>Yash</b> · LIMITED EDITION #1
+  </footer>
+
+</main>
+
+<div id="sheet" class="sheet hidden">
+  <div class="sheet-head">
+    <span id="sheetSubject"></span>
+    <button class="btn icon" onclick="closeSheet()">✕</button>
+  </div>
+  <div id="sheetBody" class="sheet-body"></div>
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/interaction.js"></script>
+<script src="js/commands.js"></script>
+<script src="js/blacklabel.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
